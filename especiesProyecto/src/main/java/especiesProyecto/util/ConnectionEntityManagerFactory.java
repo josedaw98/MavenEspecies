@@ -8,7 +8,7 @@ public class ConnectionEntityManagerFactory {
 	
 	private ConnectionEntityManagerFactory() {
 		
-		entityManagerFactory = Persistence.createEntityManagerFactory("com.carlos.especiesProyecto.H2");
+		entityManagerFactory = Persistence.createEntityManagerFactory("com.jose.especiesProyecto.H2");
 	}
 	
 	

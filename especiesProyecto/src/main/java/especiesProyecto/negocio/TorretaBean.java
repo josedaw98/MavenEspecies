@@ -32,7 +32,57 @@ public class TorretaBean {
 	@Column
 	private String ubicacion;
 	
-	@OneToMany
+	@OneToMany(mappedBy="torreta")
 	private List<MovimientoBean> movimientos = new ArrayList<MovimientoBean>();
+	
+	
+	public void AddMovimiento(MovimientoBean movimiento) {
+		if(!movimientos.contains(movimiento)) {
+			movimientos.add(movimiento);
+			movimiento.setTorreta(this);
+		}
+	}
+
+
+	public long getIdTorreta() {
+		return idTorreta;
+	}
+
+
+	public void setIdTorreta(long idTorreta) {
+		this.idTorreta = idTorreta;
+	}
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+	public String getUbicacion() {
+		return ubicacion;
+	}
+
+
+	public void setUbicacion(String ubicacion) {
+		this.ubicacion = ubicacion;
+	}
+
+
+	public List<MovimientoBean> getMovimientos() {
+		return movimientos;
+	}
+
+
+	public void setMovimientos(List<MovimientoBean> movimientos) {
+		this.movimientos = movimientos;
+	}
+	
+	
 	
 }

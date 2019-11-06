@@ -4,7 +4,7 @@
   
   
 
-  <persistence-unit name="com.carlos.especiesProyecto.H2" transaction-type="RESOURCE_LOCAL">
+  <persistence-unit name="com.jose.especiesProyecto.H2" transaction-type="RESOURCE_LOCAL">
     
     <!-- Framework proveedor del servicio de acceso a los datos -->
   	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
@@ -40,7 +40,7 @@
   
   
   
-  <persistence-unit name="com.carlos.especiesProyecto.MySql" transaction-type="RESOURCE_LOCAL">
+  <persistence-unit name="com.jose.especiesProyecto.MySql" transaction-type="RESOURCE_LOCAL">
     
     <!-- Framework proveedor del servicio de acceso a los datos -->
   	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
